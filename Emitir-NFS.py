@@ -44,10 +44,8 @@ for x in data:
       "valorTotal": x['valorTotal']
 }
 
-
-
-  APIKEY = 'MzEwMzdmOTctY2E5Ni00NDkzLWIxYTUtNTcwZGJmNDcwMTAw'
-  Empresa_ID = ''
+  APIKEY = 'Inserir A api Key'
+  Empresa_ID = 'ID da empresa'
 
   url = "https://api.enotasgw.com.br/v2/empresas/" + Empresa_ID + "/nf-e"
 
