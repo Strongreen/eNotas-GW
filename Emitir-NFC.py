@@ -1,9 +1,6 @@
 import requests
 import json
 
-
-#Date = dict()
-#from pprint import pprint
 with open('date.json', encoding="utf8") as g:
     data = json.load(g)
 
@@ -77,10 +74,8 @@ for x in data:
       "informacoesAdicionais": "Documento emitido por ME ou EPP optante pelo Simples Nacional. Não gera direito a crédito fiscal de IPI."
     }
 
-
-
-  APIKEY = 'MzEwMzdmOTctY2E5Ni00NDkzLWIxYTUtNTcwZGJmNDcwMTAw'
-  Empresa_ID = ''
+  APIKEY = 'Inserir A api Key'
+  Empresa_ID = 'ID da empresa'
 
   url = "https://api.enotasgw.com.br/v2/empresas/" + Empresa_ID + "/nf-e"
 
