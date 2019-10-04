@@ -1,30 +1,13 @@
 import requests
 import json
 
-
-#Date = dict()
-#from pprint import pprint
 with open('date.json', encoding="utf8") as g:
     data = json.load(g)
 
 for x in data:
-
-  if  x['estado'] == 'PR':
-    cfop = '1202'
-  else:
-    cfop = '2202' 
   
-  nfe = {
+  nfse = {
     "id": x['id'],
-    "ambienteEmissao": "Producao",
-    "naturezaOperacao": "Devolução",
-    "tipoOperacao": "Entrada",
-    "nfeReferenciada": [{
-        "chaveAcesso": x['chaveAcesso']
-    }],
-    "finalidade": "DevolucaoMercadoria",
-    "consumidorFinal": True,
-    "indicadorPresencaConsumidor": "OperacaoPresencial",
     "cliente": {
         "tipoPessoa": "F",
         "indicadorContribuinteICMS": "NaoContribuinte",
@@ -43,46 +26,12 @@ for x in data:
         }
     },
     "enviarPorEmail": True,
-    "itens":[{
-        "cfop": cfop,
-        "codigo": x['codigo'],
-        "descricao": x['descricao'],
-        "ncm": "49019900",
-        "quantidade": x['quantidade'],
-        "unidadeMedida": "UN",
-        "valorUnitario": x['valorUnitario'],
-        "impostos": {
-          "percentualAproximadoTributos": {
-              "simplificado": {
-                  "percentual": 31.45
-                },
-              "fonte": "IBPT"
-            },
-            "icms": {
-              "situacaoTributaria": "102",
-              "origem": 0
-            },
-            "pis": {
-              "situacaoTributaria": "98" 
-            },
-            "cofins": {
-              "situacaoTributaria": "98" 
-            },
-            "ipi": {
-              "situacaoTributaria": "54",
-              "codigoEnquadramento": "001",
-              }
-          }
-        }],
-      "informacoesAdicionais": "Documento emitido por ME ou EPP optante pelo Simples Nacional. Não gera direito a crédito fiscal de IPI."
-    }
+ }
 
+  APIKEY = 'Inserir A api Key'
+  Empresa_ID = 'ID da empresa'
 
-
-  APIKEY = 'MzEwMzdmOTctY2E5Ni00NDkzLWIxYTUtNTcwZGJmNDcwMTAw'
-  Empresa_ID = ''
-
-  url = "https://api.enotasgw.com.br/v2/empresas/" + Empresa_ID + "/nf-e"
+  url = "https://api.enotasgw.com.br/v1/empresas/" + Empresa_ID + "/nfs-e"
 
   payload = json.dumps(nfe) 
   
