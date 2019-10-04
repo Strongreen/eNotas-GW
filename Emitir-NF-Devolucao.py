@@ -72,8 +72,8 @@ for x in data:
     }
 
 
-  APIKEY = 'MzEwMzdmOTctY2E5Ni00NDkzLWIxYTUtNTcwZGJmNDcwMTAw'
-  Empresa_ID = 'B2D341C4-B28D-4D5F-87D6-34891FA30400'
+  APIKEY = 'Inserir A api Key'
+  Empresa_ID = 'ID da empresa'
 
   url = "https://api.enotasgw.com.br/v2/empresas/" + Empresa_ID + "/nf-e"
 
