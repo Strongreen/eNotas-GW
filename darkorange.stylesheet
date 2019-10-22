@@ -1,0 +1,459 @@
+QToolTip
+{
+     borda: 1px preto solido;
+     cor de fundo: # ffa02f;
+     preenchimento: 1px;
+     raio da borda: 3px;
+     opacidade: 100;
+}
+
+QWidget
+{
+    cor: # b1b1b1;
+    cor de fundo: # 323232;
+}
+
+QWidget: item: pairar
+{
+    cor de fundo: QLinearGradient (x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 # ffa02f, stop: 1 # ca0619);
+    cor: # 000000;
+}
+
+QWidget: item: selecionado
+{
+    cor de fundo: QLinearGradient (x1: 0, y1: 0, x2: 0, y2: 1, parada: 0 # ffa02f, parada: 1 # d7801a);
+}
+
+QMenuBar :: item
+{
+    fundo: transparente;
+}
+
+QMenuBar :: item: selecionado
+{
+    fundo: transparente;
+    borda: 1px s�lido # ffaa00;
+}
+
+QMenuBar :: item: pressionado
+{
+    fundo: # 444;
+    borda: 1px s�lido # 000;
+    cor de fundo: QLinearGradient (
+        x1: 0, y1: 0,
+        x2: 0, y2: 1,
+        parada: 1 # 212121,
+        stop: 0.4 # 343434 / *,
+        parada: 0.2 # 343434,
+        stop: 0.1 # ffaa00 * /
+    );
+    margem inferior: -1px;
+    fundo do preenchimento: 1px;
+}
+
+QMenu
+{
+    borda: 1px s�lido # 000;
+}
+
+QMenu :: item
+{
+    preenchimento: 2px 20px 2px 20px;
+}
+
+QMenu :: item: selecionado
+{
+    cor: # 000000;
+}
+
+QWidget: desativado
+{
+    cor: # 404040;
+    cor de fundo: # 323232;
+}
+
+QAbstractItemView
+{
+    cor de fundo: QLinearGradient (x1: 0, y1: 0, x2: 0, y2: 1, parada: 0 # 4d4d4d, parada: 0.1 # 646464, parada: 1 # 5d5d5d);
+}
+
+QWidget: foco
+{
+    / * borda: 2px QLinearGradient s�lido (x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 # ffa02f, stop: 1 # d7801a); * /
+}
+
+QLineEdit
+{
+    cor de fundo: QLinearGradient (x1: 0, y1: 0, x2: 0, y2: 1, parada: 0 # 4d4d4d, parada: 0 # 646464, parada: 1 # 5d5d5d);
+    preenchimento: 1px;
+    estilo de borda: s�lido;
+    borda: 1px s�lido # 1e1e1e;
+    raio da borda: 5;
+}
+
+QPushButton
+{
+    cor: # b1b1b1;
+    cor de fundo: QLinearGradient (x1: 0, y1: 0, x2: 0, y2: 1, parada: 0 # 565656, parada: 0,1 # 525252, parada: 0,5 # 4e4e4e, parada: 0,9 # 4a4a4a, parada: 1 # 464646);
+    largura da borda: 1 px;
+    cor da borda: # 1e1e1e;
+    estilo de borda: s�lido;
+    raio da borda: 6;
+    preenchimento: 3px;
+    tamanho da fonte: 12 px;
+    preenchimento esquerdo: 5 px;
+    padding-right: 5px;
+}
+
+QPushButton: pressionado
+{
+    cor de fundo: QLinearGradient (x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 # 2d2d2d, stop: 0.1 # 2b2b2b, stop: 0.5 # 292929, stop: 0.9 # 282828, stop: 1 # 252525);
+}
+
+QComboBox
+{
+    cor de fundo da sele��o: # ffaa00;
+    cor de fundo: QLinearGradient (x1: 0, y1: 0, x2: 0, y2: 1, parada: 0 # 565656, parada: 0,1 # 525252, parada: 0,5 # 4e4e4e, parada: 0,9 # 4a4a4a, parada: 1 # 464646);
+    estilo de borda: s�lido;
+    borda: 1px s�lido # 1e1e1e;
+    raio da borda: 5;
+}
+
+QComboBox: hover, QPushButton: hover
+{
+    borda: 2px QLinearGradient s�lido (x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 # ffa02f, stop: 1 # d7801a);
+}
+
+
+QComboBox: ativado
+{
+    padding-top: 3px;
+    preenchimento esquerdo: 4 px;
+    cor de fundo: QLinearGradient (x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 # 2d2d2d, stop: 0.1 # 2b2b2b, stop: 0.5 # 292929, stop: 0.9 # 282828, stop: 1 # 252525);
+    cor de fundo da sele��o: # ffaa00;
+}
+
+QComboBox QAbstractItemView
+{
+    borda: cinza escuro s�lido de 2px;
+    cor de fundo da sele��o: QLinearGradient (x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 # ffa02f, stop: 1 # d7801a);
+}
+
+QComboBox :: drop-down
+{
+     origem de subcontrole: preenchimento;
+     posi��o de subcontrole: canto superior direito;
+     largura: 15 px;
+
+     largura da borda esquerda: 0 px;
+     cor da borda esquerda: cinza escuro;
+     estilo da borda esquerda: s�lido; / * apenas uma �nica linha * /
+     raio na borda superior direita: 3 px; / * mesmo raio que o QComboBox * /
+     raio da borda inferior direita: 3 px;
+ }
+
+QComboBox :: seta para baixo
+{
+     imagem: url (: / down_arrow.png);
+}
+
+QGroupBox: focus
+{
+borda: 2px QLinearGradient s�lido (x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 # ffa02f, stop: 1 # d7801a);
+}
+
+QTextEdit: focus
+{
+    borda: 2px QLinearGradient s�lido (x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 # ffa02f, stop: 1 # d7801a);
+}
+
+QScrollBar: horizontal {
+     borda: 1px s�lido # 222222;
+     fundo: QLinearGradient (x1: 0, y1: 0, x2: 0, y2: 1, parada: 0.0 # 121212, parada: 0.2 # 282828, parada: 1 # 484848);
+     altura: 7px;
+     margem: 0 px 16 px 0 16 px;
+}
+
+QScrollBar :: handle: horizontal
+{
+      fundo: QLinearGradient (x1: 0, y1: 0, x2: 1, y2: 0, parada: 0 # ffa02f, parada: 0,5 # d7801a, parada: 1 # ffa02f);
+      altura m�nima: 20 px;
+      raio da borda: 2px;
+}
+
+QScrollBar :: add-line: horizontal {
+      borda: 1px s�lido # 1b1b19;
+      raio da borda: 2px;
+      fundo: QLinearGradient (x1: 0, y1: 0, x2: 1, y2: 0, parada: 0 # ffa02f, parada: 1 # d7801a);
+      largura: 14px;
+      posi��o de subcontrole: direita;
+      origem do subcontrole: margem;
+}
+
+QScrollBar :: sub-linha: horizontal {
+      borda: 1px s�lido # 1b1b19;
+      raio da borda: 2px;
+      fundo: QLinearGradient (x1: 0, y1: 0, x2: 1, y2: 0, parada: 0 # ffa02f, parada: 1 # d7801a);
+      largura: 14px;
+     posi��o de subcontrole: esquerda;
+     origem do subcontrole: margem;
+}
+
+QScrollBar :: seta para a direita: horizontal, QScrollBar :: seta para a esquerda: horizontal
+{
+      borda: 1px preto s�lido;
+      largura: 1px;
+      altura: 1px;
+      fundo: branco;
+}
+
+QScrollBar :: add-page: horizontal, QScrollBar :: subp�gina: horizontal
+{
+      fundo: nenhum;
+}
+
+QScrollBar: vertical
+{
+      fundo: QLinearGradient (x1: 0, y1: 0, x2: 1, y2: 0, parada: 0.0 # 121212, parada: 0.2 # 282828, parada: 1 # 484848);
+      largura: 7px;
+      margem: 16 px 0 16 px 0;
+      borda: 1px s�lido # 222222;
+}
+
+QScrollBar :: handle: vertical
+{
+      fundo: QLinearGradient (x1: 0, y1: 0, x2: 0, y2: 1, parada: 0 # ffa02f, parada: 0,5 # d7801a, parada: 1 # ffa02f);
+      altura m�nima: 20 px;
+      raio da borda: 2px;
+}
+
+QScrollBar :: add-line: vertical
+{
+      borda: 1px s�lido # 1b1b19;
+      raio da borda: 2px;
+      fundo: QLinearGradient (x1: 0, y1: 0, x2: 0, y2: 1, parada: 0 # ffa02f, parada: 1 # d7801a);
+      altura: 14px;
+      posi��o de subcontrole: inferior;
+      origem do subcontrole: margem;
+}
+
+QScrollBar :: sub-linha: vertical
+{
+      borda: 1px s�lido # 1b1b19;
+      raio da borda: 2px;
+      fundo: QLinearGradient (x1: 0, y1: 0, x2: 0, y2: 1, parada: 0 # d7801a, parada: 1 # ffa02f);
+      altura: 14px;
+      posi��o de subcontrole: top;
+      origem do subcontrole: margem;
+}
+
+QScrollBar :: seta para cima: vertical, QScrollBar :: seta para baixo: vertical
+{
+      borda: 1px preto s�lido;
+      largura: 1px;
+      altura: 1px;
+      fundo: branco;
+}
+
+
+QScrollBar :: add-page: vertical, QScrollBar :: subp�gina: vertical
+{
+      fundo: nenhum;
+}
+
+QTextEdit
+{
+    cor de fundo: # 242424;
+}
+
+QPlainTextEdit
+{
+    cor de fundo: # 242424;
+}
+
+QHeaderView :: se��o
+{
+    cor de fundo: QLinearGradient (x1: 0, y1: 0, x2: 0, y2: 1, parada: 0 # 616161, parada: 0,5 # 505050, parada: 0,6 # 434343, parada: 1 # 656565);
+    cor branca;
+    preenchimento esquerdo: 4 px;
+    borda: 1px s�lido # 6c6c6c;
+}
+
+QCheckBox: desativado
+{
+cor: # 414141;
+}
+
+QDockWidget :: title
+{
+    alinhamento de texto: centro;
+    espa�amento: 3px; / * espa�amento entre itens na barra de ferramentas * /
+    cor de fundo: QLinearGradient (x1: 0, y1: 0, x2: 0, y2: 1, parada: 0 # 323232, parada: 0,5 # 242424, parada: 1 # 323232);
+}
+
+QDockWidget :: bot�o fechar, QDockWidget :: bot�o flutuador
+{
+    alinhamento de texto: centro;
+    espa�amento: 1 px; / * espa�amento entre itens na barra de ferramentas * /
+    cor de fundo: QLinearGradient (x1: 0, y1: 0, x2: 0, y2: 1, parada: 0 # 323232, parada: 0,5 # 242424, parada: 1 # 323232);
+}
+
+QDockWidget :: bot�o fechar: pairar, QDockWidget :: bot�o flutuar: pairar
+{
+    fundo: # 242424;
+}
+
+QDockWidget :: bot�o fechar: pressionado, QDockWidget :: bot�o flutuador: pressionado
+{
+    preenchimento: 1px -1px -1px 1px;
+}
+
+QMainWindow :: separator
+{
+    cor de fundo: QLinearGradient (x1: 0, y1: 0, x2: 0, y2: 1, parada: 0 # 161616, parada: 0,5 # 151515, parada: 0,6 # 212121, parada: 1 # 343434);
+    cor branca;
+    preenchimento esquerdo: 4 px;
+    borda: 1px s�lido # 4c4c4c;
+    espa�amento: 3px; / * espa�amento entre itens na barra de ferramentas * /
+}
+
+QMainWindow :: separator: hover
+{
+
+    cor de fundo: QLinearGradient (x1: 0, y1: 0, x2: 0, y2: 1, stop: 0 # d7801a, stop: 0.5 # b56c17 stop: 1 # ffa02f);
+    cor branca;
+    preenchimento esquerdo: 4 px;
+    borda: 1px s�lido # 6c6c6c;
+    espa�amento: 3px; / * espa�amento entre itens na barra de ferramentas * /
+}
+
+QToolBar :: handle
+{
+     espa�amento: 3px; / * espa�amento entre itens na barra de ferramentas * /
+     background: url (: / images / handle.png);
+}
+
+QMenu :: separador
+{
+    altura: 2px;
+    cor de fundo: QLinearGradient (x1: 0, y1: 0, x2: 0, y2: 1, parada: 0 # 161616, parada: 0,5 # 151515, parada: 0,6 # 212121, parada: 1 # 343434);
+    cor branca;
+    preenchimento esquerdo: 4 px;
+    margem esquerda: 10 px;
+    margem direita: 5 px;
+}
+
+QProgressBar
+{
+    borda: 2px cinza s�lido;
+    raio da borda: 5px;
+    alinhamento de texto: centro;
+}
+
+QProgressBar :: chunk
+{
+    cor de fundo: # d7801a;
+    largura: 2,15 px;
+    margem: 0,5 px;
+}
+
+QTabBar :: tab {
+    cor: # b1b1b1;
+    borda: 1px s�lido # 444;
+    estilo de borda inferior: nenhum;
+    cor de fundo: # 323232;
+    preenchimento esquerdo: 10 px;
+    padding-right: 10 px;
+    padding-top: 3px;
+    fundo do preenchimento: 2px;
+    margem direita: -1px;
+}
+
+QTabWidget :: pane {
+    borda: 1px s�lido # 444;
+    superior: 1 px;
+}
+
+QTabBar :: tab: last
+{
+    margem direita: 0; / * a �ltima guia selecionada n�o tem nada a se sobrepor � direita * /
+    raio na borda superior direita: 3 px;
+}
+
+QTabBar :: tab: primeiro:! Selected
+{
+ margem esquerda: 0px; / * a �ltima guia selecionada n�o tem nada a se sobrepor � direita * /
+
+
+    raio da borda superior esquerda: 3 px;
+}
+
+QTabBar :: tab:! Selected
+{
+    cor: # b1b1b1;
+    estilo de borda inferior: s�lido;
+    margem superior: 3 px;
+    cor de fundo: QLinearGradient (x1: 0, y1: 0, x2: 0, y2: 1, parada: 1 # 212121, parada: .4 # 343434);
+}
+
+QTabBar :: tab: selecionado
+{
+    raio da borda superior esquerda: 3 px;
+    raio na borda superior direita: 3 px;
+    margem inferior: 0 px;
+}
+
+QTabBar :: tab:! Selected: hover
+{
+    / * border-top: 2px s�lido # ffaa00;
+    fundo do preenchimento: 3px; * /
+    raio da borda superior esquerda: 3 px;
+    raio na borda superior direita: 3 px;
+    cor de fundo: QLinearGradient (x1: 0, y1: 0, x2: 0, y2: 1, parada: 1 # 212121, parada: 0.4 # 343434, parada: 0.2 # 343434, parada: 0.1 # ffaa00);
+}
+
+QRadioButton :: indicador: marcado, QRadioButton :: indicador: desmarcado {
+    cor: # b1b1b1;
+    cor de fundo: # 323232;
+    borda: 1px s�lido # b1b1b1;
+    raio da borda: 6px;
+}
+
+QRadioButton :: indicador: verificado
+{
+    cor de fundo: qradialgradient (
+        cx: 0,5, cy: 0,5,
+        fx: 0,5, fy: 0,5,
+        raio: 1,0,
+        stop: 0.25 # ffaa00,
+        Parar: 0.3 # 323232
+    );
+}
+
+QCheckBox :: indicador {
+    cor: # b1b1b1;
+    cor de fundo: # 323232;
+    borda: 1px s�lido # b1b1b1;
+    largura: 9px;
+    altura: 9px;
+}
+
+QRadioButton :: indicador
+{
+    raio da borda: 6px;
+}
+
+QRadioButton :: indicador: hover, QCheckBox :: indicador: hover
+{
+    borda: 1px s�lido # ffaa00;
+}
+
+QCheckBox :: indicador: marcado
+{
+    image: url (: / images / checkbox.png);
+}
+
+QCheckBox :: indicador: desativado, QRadioButton :: indicador: desativado
+{
+    borda: 1px s�lido # 444;
+}
