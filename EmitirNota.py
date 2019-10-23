@@ -49,26 +49,6 @@ class Ui_MainWindow(object):
             issRetidoFonte = "true"
         else:
             issRetidoFonte = "false"
-
-        print(idExterno)
-        print(nome)
-        print(email)
-        print(telefone)
-        print(cpfCnpj)
-        print(uf)
-        print(cidade)
-        print(numero)
-        print(complemento)
-        print(bairro)
-        print(cep)
-        print(descricao)
-        print(aliquotaIss)
-        print(SMU)
-        print(valorTotal)
-        print(ambienteEmissao)
-        print(enviarPorEmail)
-        print(tipoPessoa)
-        print(issRetidoFonte)
         
         nfse = NFS.notaFiscalS(idExterno,ambienteEmissao, enviarPorEmail, tipoPessoa, nome, email, telefone, cpfCnpj, uf, cidade, logradouro, numero, complemento, bairro,cep, descricao, aliquotaIss, issRetidoFonte, SMU,valorTotal)
         NFS.Emite(nfse)
