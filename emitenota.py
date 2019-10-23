@@ -19,11 +19,7 @@ class notaFiscalServico:
     else:
       issRetidoFonte = False
 
-    
-    if tipoPessoa == 'PF':
-      cpfCnpj = cpfCnpj[11:11]
-    else:
-      cpfCnpj = cpfCnpj[14:14]
+
     
     uf = uf[:2]
 
@@ -56,7 +52,7 @@ class notaFiscalServico:
         "valorInss": 0.00,
         "valorIr": 0.00,
         "valorPis": 0.00,
-        "codigoInternoServicoMunicipal": int(SMU)
+        "codigoInternoServicoMunicipal": int(SMU) # Usar o SMU: 18750
     },
       "valorTotal": float(valorTotal),
       "observacoes": "Essa nota não tem valor fiscal, NOTA DE TESTE"
@@ -65,10 +61,10 @@ class notaFiscalServico:
     return nfse
 
   def Emite(self,nfse):
-    APIKEY = 'APIKey'
-    Empresa_ID = 'teste'
+    APIKEY = 'API Key da empresa de teste'
+    Empresa_ID = 'ID da empresa de teste'
 
-    url = "https://api.enotasgw.com.br/v1/empresas/" + Empresa_ID + "/nfs-e"
+    url = "https://api.enotasgw.com.br/v1/empresas/" + Empresa_ID + "/nfes"
 
     payload = json.dumps(nfse) 
 
@@ -80,6 +76,7 @@ class notaFiscalServico:
 
     response = requests.request("POST", url, data=payload, headers=headers)
 
+    print("Nota emitida, ID interno:")
     print(response.text)
 
 
