@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1204</width>
-    <height>770</height>
+    <width>1066</width>
+    <height>655</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -478,10 +478,10 @@ QCheckBox::indicator:disabled, QRadioButton::indicator:disabled
    <widget class="QScrollArea" name="scrollArea">
     <property name="geometry">
      <rect>
-      <x>10</x>
-      <y>10</y>
-      <width>1181</width>
-      <height>771</height>
+      <x>0</x>
+      <y>0</y>
+      <width>1061</width>
+      <height>651</height>
      </rect>
     </property>
     <property name="widgetResizable">
@@ -492,8 +492,8 @@ QCheckBox::indicator:disabled, QRadioButton::indicator:disabled
       <rect>
        <x>0</x>
        <y>0</y>
-       <width>1179</width>
-       <height>769</height>
+       <width>1059</width>
+       <height>649</height>
       </rect>
      </property>
      <property name="maximumSize">
@@ -505,9 +505,9 @@ QCheckBox::indicator:disabled, QRadioButton::indicator:disabled
      <widget class="QLabel" name="Cliente_lb">
       <property name="geometry">
        <rect>
-        <x>20</x>
+        <x>220</x>
         <y>0</y>
-        <width>91</width>
+        <width>81</width>
         <height>41</height>
        </rect>
       </property>
@@ -527,8 +527,8 @@ QCheckBox::indicator:disabled, QRadioButton::indicator:disabled
       <property name="geometry">
        <rect>
         <x>800</x>
-        <y>460</y>
-        <width>361</width>
+        <y>480</y>
+        <width>251</width>
         <height>41</height>
        </rect>
       </property>
@@ -555,9 +555,9 @@ QCheckBox::indicator:disabled, QRadioButton::indicator:disabled
       <property name="geometry">
        <rect>
         <x>0</x>
-        <y>60</y>
+        <y>50</y>
         <width>551</width>
-        <height>679</height>
+        <height>591</height>
        </rect>
       </property>
       <property name="font">
@@ -920,7 +920,7 @@ QCheckBox::indicator:disabled, QRadioButton::indicator:disabled
       <property name="geometry">
        <rect>
         <x>570</x>
-        <y>460</y>
+        <y>470</y>
         <width>211</width>
         <height>41</height>
        </rect>
@@ -941,8 +941,8 @@ QCheckBox::indicator:disabled, QRadioButton::indicator:disabled
       <property name="geometry">
        <rect>
         <x>800</x>
-        <y>520</y>
-        <width>361</width>
+        <y>380</y>
+        <width>251</width>
         <height>41</height>
        </rect>
       </property>
@@ -959,7 +959,7 @@ QCheckBox::indicator:disabled, QRadioButton::indicator:disabled
       <property name="geometry">
        <rect>
         <x>570</x>
-        <y>530</y>
+        <y>390</y>
         <width>101</width>
         <height>20</height>
        </rect>
@@ -973,15 +973,15 @@ QCheckBox::indicator:disabled, QRadioButton::indicator:disabled
        </font>
       </property>
       <property name="text">
-       <string>IDExterno:</string>
+       <string>ID Externo:</string>
       </property>
      </widget>
      <widget class="QLineEdit" name="ValorTotal_Led">
       <property name="geometry">
        <rect>
         <x>800</x>
-        <y>350</y>
-        <width>361</width>
+        <y>530</y>
+        <width>251</width>
         <height>41</height>
        </rect>
       </property>
@@ -997,10 +997,10 @@ QCheckBox::indicator:disabled, QRadioButton::indicator:disabled
      <widget class="QPushButton" name="EmiteNota_Bt">
       <property name="geometry">
        <rect>
-        <x>750</x>
-        <y>610</y>
-        <width>291</width>
-        <height>81</height>
+        <x>700</x>
+        <y>590</y>
+        <width>221</width>
+        <height>51</height>
        </rect>
       </property>
       <property name="font">
@@ -1018,7 +1018,7 @@ QCheckBox::indicator:disabled, QRadioButton::indicator:disabled
      <widget class="QLabel" name="ServicoPrestado_Lb">
       <property name="geometry">
        <rect>
-        <x>560</x>
+        <x>720</x>
         <y>0</y>
         <width>161</width>
         <height>41</height>
@@ -1036,190 +1036,11 @@ QCheckBox::indicator:disabled, QRadioButton::indicator:disabled
        <string>Serviço Prestado</string>
       </property>
      </widget>
-     <widget class="QWidget" name="horizontalLayoutWidget_2">
-      <property name="geometry">
-       <rect>
-        <x>560</x>
-        <y>60</y>
-        <width>601</width>
-        <height>267</height>
-       </rect>
-      </property>
-      <property name="font">
-       <font>
-        <family>Yu Gothic UI Semibold</family>
-        <pointsize>16</pointsize>
-        <weight>75</weight>
-        <bold>true</bold>
-       </font>
-      </property>
-      <layout class="QHBoxLayout" name="horizontalLayout_2">
-       <item>
-        <layout class="QVBoxLayout" name="verticalLayout_5">
-         <item>
-          <widget class="QLabel" name="DescricaoServico_Lb">
-           <property name="font">
-            <font>
-             <family>Yu Gothic UI Semibold</family>
-             <pointsize>16</pointsize>
-             <weight>75</weight>
-             <bold>true</bold>
-            </font>
-           </property>
-           <property name="text">
-            <string>Descrição do serviço</string>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QLabel" name="label_23">
-           <property name="font">
-            <font>
-             <family>Yu Gothic UI Semibold</family>
-             <pointsize>16</pointsize>
-             <weight>75</weight>
-             <bold>true</bold>
-            </font>
-           </property>
-           <property name="text">
-            <string/>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QLabel" name="label_22">
-           <property name="font">
-            <font>
-             <family>Yu Gothic UI Semibold</family>
-             <pointsize>16</pointsize>
-             <weight>75</weight>
-             <bold>true</bold>
-            </font>
-           </property>
-           <property name="text">
-            <string/>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QLabel" name="Aliquota_Lb">
-           <property name="font">
-            <font>
-             <family>Yu Gothic UI Semibold</family>
-             <pointsize>16</pointsize>
-             <weight>75</weight>
-             <bold>true</bold>
-            </font>
-           </property>
-           <property name="text">
-            <string>Aliquota ISS</string>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QLabel" name="ISSRetidoFonte_Lb">
-           <property name="font">
-            <font>
-             <family>Yu Gothic UI Semibold</family>
-             <pointsize>16</pointsize>
-             <weight>75</weight>
-             <bold>true</bold>
-            </font>
-           </property>
-           <property name="text">
-            <string>ISS Retino na Fonte</string>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QLabel" name="SMU_Lb">
-           <property name="font">
-            <font>
-             <family>Yu Gothic UI Semibold</family>
-             <pointsize>16</pointsize>
-             <weight>75</weight>
-             <bold>true</bold>
-            </font>
-           </property>
-           <property name="text">
-            <string>Código de Serviço Interno</string>
-           </property>
-          </widget>
-         </item>
-        </layout>
-       </item>
-       <item>
-        <layout class="QVBoxLayout" name="verticalLayout_6">
-         <item>
-          <widget class="QTextEdit" name="DescricaoServico_Txed">
-           <property name="enabled">
-            <bool>true</bool>
-           </property>
-           <property name="font">
-            <font>
-             <family>Yu Gothic UI Semibold</family>
-             <pointsize>16</pointsize>
-             <weight>75</weight>
-             <bold>true</bold>
-            </font>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QLineEdit" name="Aliquota_Led">
-           <property name="font">
-            <font>
-             <family>Yu Gothic UI Semibold</family>
-             <pointsize>16</pointsize>
-             <weight>75</weight>
-             <bold>true</bold>
-            </font>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QComboBox" name="ISSRetidoFonte_Cbx">
-           <property name="font">
-            <font>
-             <family>Yu Gothic UI Semibold</family>
-             <pointsize>16</pointsize>
-             <weight>75</weight>
-             <bold>true</bold>
-            </font>
-           </property>
-           <item>
-            <property name="text">
-             <string>Não</string>
-            </property>
-           </item>
-           <item>
-            <property name="text">
-             <string>Sim</string>
-            </property>
-           </item>
-          </widget>
-         </item>
-         <item>
-          <widget class="QLineEdit" name="SMU_Led">
-           <property name="font">
-            <font>
-             <family>Yu Gothic UI Semibold</family>
-             <pointsize>16</pointsize>
-             <weight>75</weight>
-             <bold>true</bold>
-            </font>
-           </property>
-          </widget>
-         </item>
-        </layout>
-       </item>
-      </layout>
-     </widget>
      <widget class="QLabel" name="ValorTotal_Lb">
       <property name="geometry">
        <rect>
         <x>570</x>
-        <y>350</y>
+        <y>530</y>
         <width>211</width>
         <height>31</height>
        </rect>
@@ -1240,7 +1061,7 @@ QCheckBox::indicator:disabled, QRadioButton::indicator:disabled
       <property name="geometry">
        <rect>
         <x>570</x>
-        <y>400</y>
+        <y>430</y>
         <width>181</width>
         <height>44</height>
        </rect>
@@ -1261,8 +1082,8 @@ QCheckBox::indicator:disabled, QRadioButton::indicator:disabled
       <property name="geometry">
        <rect>
         <x>800</x>
-        <y>400</y>
-        <width>361</width>
+        <y>430</y>
+        <width>251</width>
         <height>41</height>
        </rect>
       </property>
@@ -1284,6 +1105,136 @@ QCheckBox::indicator:disabled, QRadioButton::indicator:disabled
         <string>Não</string>
        </property>
       </item>
+     </widget>
+     <widget class="QTextEdit" name="DescricaoServico_Txed">
+      <property name="enabled">
+       <bool>true</bool>
+      </property>
+      <property name="geometry">
+       <rect>
+        <x>560</x>
+        <y>90</y>
+        <width>487</width>
+        <height>161</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Yu Gothic UI Semibold</family>
+        <pointsize>16</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+     </widget>
+     <widget class="QComboBox" name="ISSRetidoFonte_Cbx">
+      <property name="geometry">
+       <rect>
+        <x>800</x>
+        <y>323</y>
+        <width>251</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Yu Gothic UI Semibold</family>
+        <pointsize>16</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <item>
+       <property name="text">
+        <string>Não</string>
+       </property>
+      </item>
+      <item>
+       <property name="text">
+        <string>Sim</string>
+       </property>
+      </item>
+     </widget>
+     <widget class="QLineEdit" name="Aliquota_Led">
+      <property name="geometry">
+       <rect>
+        <x>800</x>
+        <y>270</y>
+        <width>251</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Yu Gothic UI Semibold</family>
+        <pointsize>16</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+     </widget>
+     <widget class="QLabel" name="DescricaoServico_Lb">
+      <property name="geometry">
+       <rect>
+        <x>560</x>
+        <y>50</y>
+        <width>197</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Yu Gothic UI Semibold</family>
+        <pointsize>16</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Descrição do serviço</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="Aliquota_Lb">
+      <property name="geometry">
+       <rect>
+        <x>570</x>
+        <y>270</y>
+        <width>141</width>
+        <height>41</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Yu Gothic UI Semibold</family>
+        <pointsize>16</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>Aliquota ISS</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="ISSRetidoFonte_Lb">
+      <property name="geometry">
+       <rect>
+        <x>570</x>
+        <y>330</y>
+        <width>197</width>
+        <height>31</height>
+       </rect>
+      </property>
+      <property name="font">
+       <font>
+        <family>Yu Gothic UI Semibold</family>
+        <pointsize>16</pointsize>
+        <weight>75</weight>
+        <bold>true</bold>
+       </font>
+      </property>
+      <property name="text">
+       <string>ISS Retido na Fonte</string>
+      </property>
      </widget>
     </widget>
    </widget>

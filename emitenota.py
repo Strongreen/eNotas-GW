@@ -5,7 +5,7 @@ import json
 
 class notaFiscalServico:
   
-  def notaFiscalS(self,idExterno,ambienteEmissao, enviarPorEmail, tipoPessoa, nome, email, telefone, cpfCnpj, uf, cidade, logradouro, numero, complemento, bairro,cep, descricao, aliquotaIss, issRetidoFonte, SMU,valorTotal):
+  def notaFiscalS(self,idExterno,ambienteEmissao, enviarPorEmail, tipoPessoa, nome, email, telefone, cpfCnpj, uf, cidade, logradouro, numero, complemento, bairro,cep, descricao, aliquotaIss, issRetidoFonte,valorTotal):
 
     #Colocar algumas tratativas
 
@@ -18,9 +18,7 @@ class notaFiscalServico:
       issRetidoFonte = True
     else:
       issRetidoFonte = False
-
-
-    
+   
     uf = uf[:2]
 
     nfse = {
@@ -52,7 +50,6 @@ class notaFiscalServico:
         "valorInss": 0.00,
         "valorIr": 0.00,
         "valorPis": 0.00,
-        "codigoInternoServicoMunicipal": int(SMU) # Usar o SMU: 18750
     },
       "valorTotal": float(valorTotal),
       "observacoes": "Essa nota não tem valor fiscal, NOTA DE TESTE"
@@ -61,10 +58,10 @@ class notaFiscalServico:
     return nfse
 
   def Emite(self,nfse):
-    APIKEY = 'API Key da empresa de teste'
-    Empresa_ID = 'ID da empresa de teste'
+    APIKEY = 'APIKey'
+    Empresa_ID = 'teste'
 
-    url = "https://api.enotasgw.com.br/v1/empresas/" + Empresa_ID + "/nfes"
+    url = "https://api.enotasgw.com.br/v1/empresas/" + Empresa_ID + "/nfse"
 
     payload = json.dumps(nfse) 
 
@@ -76,7 +73,6 @@ class notaFiscalServico:
 
     response = requests.request("POST", url, data=payload, headers=headers)
 
-    print("Nota emitida, ID interno:")
     print(response.text)
 
 
